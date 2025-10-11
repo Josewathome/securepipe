@@ -24,3 +24,7 @@ def example_1_basic_encryption():
     decrypted = pipe.decrypt(token)
     print(f"Decrypted data: {decrypted}")
     print()
+    
+if __name__ == "__main__":
+    # Run examples
+    example_1_basic_encryption()

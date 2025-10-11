@@ -71,6 +71,13 @@ print(info)
 
 
 ## Installation
+# To use the Library
+```bash
+pip install securepipe
+```
+
+## for Local Dev
+
 
 ```bash
 pip install cryptography

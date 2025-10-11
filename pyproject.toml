@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "securepipe"
 version = "0.1.0"
-description = "A lightweight encryption library using HS256 with additional custom security layers."
+description = "A lightweight encryption library using HS256 with additional custom security layers. eg UUID and 2 layers of encryption"
 readme = { file = "README.md", content-type = "text/markdown" }
 requires-python = ">=3.8"
 license = { text = "MIT" }
@@ -15,6 +15,16 @@ authors = [
 dependencies = [
   "cryptography>=41.0.0",
   "PyJWT>=2.8.0"
+]
+
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.8",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Topic :: Security :: Cryptography"
 ]
 
 # Optional dev dependencies
@@ -31,17 +41,6 @@ dev = [
 [project.urls]
 Homepage = "https://github.com/josewathome/securepipe"
 Issues = "https://github.com/josewathome/securepipe/issues"
-
-# Classifiers for PyPI discoverability
-classifiers = [
-  "Programming Language :: Python :: 3",
-  "Programming Language :: Python :: 3.8",
-  "License :: OSI Approved :: MIT License",
-  "Operating System :: OS Independent",
-  "Development Status :: 3 - Alpha",
-  "Intended Audience :: Developers",
-  "Topic :: Security :: Cryptography"
-]
 
 # Package discovery
 [tool.setuptools.packages.find]

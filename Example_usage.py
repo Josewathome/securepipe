@@ -2,7 +2,7 @@
 SecurePipe Library - Usage Examples and Test Cases
 """
 
-from src.securepipe import SecurePipe  # Assuming your class is in secure_pipe.py
+from securepipe import SecurePipe  # Assuming you did pip install securepipe
 import time
 
 # ============================================================================
