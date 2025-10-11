@@ -1,0 +1,13 @@
+/venv
+venv/*
+
+build.txt
+
+.pytest_cache/*
+/.pytest_cache
+/src/securepipe.egg-info
+src/securepipe.egg-info/*
+
+src/securepipe/__pycache__/*.cpython-310.pyc
+src/tests/__pycache__/*.cpython-310.pyc
+src/tests/__pycache__/*.cpython-310-pytest-8.4.2.pyc
