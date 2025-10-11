@@ -56,7 +56,7 @@ pip-log.txt
 
 # --- Project-specific ignores ---
 # Tests / temp files
-src/tests/__pycache__/
+tests/__pycache__/
 src/securepipe/__pycache__/
 
 # --- Optional: JetBrains / PyCharm project metadata ---
