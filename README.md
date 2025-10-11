@@ -1,5 +1,3 @@
----
-
 ````markdown
 # SecurePipe
 
@@ -300,8 +298,5 @@ pip install cryptography
 
 MIT License — free to use and modify.
 
-```
-
----
 
 ```
