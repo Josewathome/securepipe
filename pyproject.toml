@@ -39,8 +39,8 @@ dev = [
 
 # URLs for PyPI
 [project.urls]
-Homepage = "https://github.com/josewathome/securepipe"
-Issues = "https://github.com/josewathome/securepipe/issues"
+Homepage = "https://github.com/Josewathome/securepipe"
+Issues = "https://github.com/Josewathome/securepipe/issues"
 
 # Package discovery
 [tool.setuptools.packages.find]

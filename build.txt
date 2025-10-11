@@ -1,0 +1,100 @@
+==============================
+📦 SecurePipe Build & Publish Guide
+==============================
+
+This guide explains how to build, test, and publish the SecurePipe library.
+
+---------------------------------
+⚙️ 1. Install Build Dependencies
+---------------------------------
+
+Make sure you have the build tools installed:
+
+    pip install build
+
+---------------------------------
+🏗️ 2. Build the Library
+---------------------------------
+
+From the project root (where pyproject.toml is located), run:
+
+    python -m build
+
+This command creates distribution files inside the `dist/` directory:
+
+    dist/
+    ├── securepipe-0.1.0.tar.gz
+    └── securepipe-0.1.0-py3-none-any.whl
+
+These are your source and wheel distributions, ready for testing or upload.
+
+---------------------------------
+🚀 3. Publish to PyPI
+---------------------------------
+
+First, install Twine (used for secure uploads):
+
+    pip install twine
+
+Then upload your package:
+
+    twine upload dist/*
+
+Enter your PyPI credentials when prompted.
+
+Once uploaded, your library will be available to install via pip:
+
+    pip install securepipe
+
+---------------------------------
+✅ 4. Local Editable Installation (Recommended for Development)
+---------------------------------
+
+During development, it’s better to install the package in *editable mode* so that code changes take effect instantly without rebuilding.
+
+From the project root (same directory as pyproject.toml):
+
+    pip install -e .
+
+This tells Python to treat your local `src/securepipe/` folder as the active installed package.
+
+Now you can import it anywhere:
+
+    from securepipe import SecurePipe
+
+✅ Tests and scripts will work seamlessly, reflecting your latest code changes.
+
+---------------------------------
+🧪 5. Running Tests
+---------------------------------
+
+Run the test suite using pytest:
+
+    pytest
+
+Make sure you’re in your virtual environment and inside the project root.
+
+---------------------------------
+📁 6. Typical Project Structure
+---------------------------------
+
+    securepipe/
+    ├─ src/
+    │  └─ securepipe/
+    │   │  ├─ __init__.py
+    │   │  └─ core.py
+    │   └─ tests/
+    │         └─ test_core.py
+    ├─ README.md
+    ├─ pyproject.toml
+    ├─ requirements.txt
+    └─ build.txt
+
+---------------------------------
+💡 Notes
+---------------------------------
+- Always bump your version in `pyproject.toml` before each PyPI upload.
+- Use `python -m build` and `twine upload` for clean, reproducible releases.
+- Editable installs (`pip install -e .`) are the best way to test during development.
+
+---------------------------------

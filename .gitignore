@@ -1,16 +1,70 @@
-/venv
-venv/*
 
-build.txt
+# --- Virtual environments ---
+venv/
+.venv/
+env/
+ENV/
+*.env
+*.venv
 
-.pytest_cache/*
-/.pytest_cache
-/src/securepipe.egg-info
-src/securepipe.egg-info/*
+# --- Python cache & compiled files ---
+__pycache__/
+*.py[cod]
+*$py.class
 
-src/securepipe/__pycache__/*.cpython-310.pyc
-src/tests/__pycache__/*.cpython-310.pyc
-src/tests/__pycache__/*.cpython-310-pytest-8.4.2.pyc
+# --- Distribution / packaging ---
+build/
+dist/
+*.egg-info/
+src/securepipe.egg-info/
+.eggs/
+*.egg
 
-/dist
-dist/*
+# --- Pytest cache ---
+.pytest_cache/
+.coverage
+htmlcov/
+.cache/
+
+# --- Editor & IDE files ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# --- Logs and reports ---
+*.log
+*.out
+*.err
+
+# --- OS-specific junk ---
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# --- MyPy / Type checking ---
+.mypy_cache/
+.dmypy.json
+.pyre/
+
+# --- PyInstaller / Packaging ---
+*.manifest
+*.spec
+
+# --- Wheel / Build Artifacts ---
+pip-wheel-metadata/
+pip-log.txt
+
+# --- Project-specific ignores ---
+# Tests / temp files
+src/tests/__pycache__/
+src/securepipe/__pycache__/
+
+# --- Optional: JetBrains / PyCharm project metadata ---
+.idea/
+
+# --- Optional: WSL interop paths ---
+wsl$/

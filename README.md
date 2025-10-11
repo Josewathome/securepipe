@@ -76,6 +76,8 @@ print(info)
 pip install securepipe
 ```
 
+# Example usage: https://github.com/Josewathome/securepipe/blob/main/Example_usage.py
+
 ## for Local Dev
 
 
