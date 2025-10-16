@@ -111,7 +111,7 @@ SecurePipe accepts the following payload types:
 ### 1. Basic Usage (No UUID, No Expiration)
 
 ```python
-from secure_pipe import SecurePipe
+from securepipe import SecurePipe
 
 pipe = SecurePipe(secret_key="my_secret")
 token = pipe.encrypt({"message": "classified"})
